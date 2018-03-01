@@ -1,0 +1,375 @@
+/*---------------------------
+This is a CSS document titled
+"style.css".  It provides the 
+styling for the entire website.  
+Changing this documents affects 
+the layout of the entire website,
+so do so with utmost care. 
+            - Ben Dowdell
+---------------------------*/
+
+
+/*---------------------------
+Global styling
+---------------------------*/
+
+body {
+    font-family: Helvetica;
+    font-size: 12pt;
+    background-color: #670001;
+    margin: 0px 20px 20px 20px;
+    padding: 0px;
+    text-align: center;
+}
+		 
+/*---------------------------
+Anchors of class "nav" will
+appear with the following
+color scheme:
+#670001 - "Crimson"
+#F1EDC9 - "Cream"
+#FFFFFF - White
+---------------------------*/
+
+.nav a:link { color: #F1ECD9; text-decoration: none; }
+.nav a:active {
+    background-color: #670001;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.nav a:visited { color: #F1ECD9; text-decoration: none; }
+.nav a:hover {
+    background-color: #670001;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*---------------------------
+Anchors of class "cont" will
+appear with the following
+color scheme:
+#000000 - Black
+#F1ECD9 - "Cream"
+---------------------------*/
+
+.cont a:link { color: #000000; }
+.cont a:active {
+    background-color: #000000;
+    color: #F1ECD9;
+}
+.cont a:visited { color: #000000; }
+.cont a:hover {
+    background-color: #000000;
+    color: #F1ECD9;
+}
+							
+/*---------------------------
+Anchors of class "image" will
+appear with the following
+color scheme:
+#000000 - Black
+#F1ECD9 - "Cream"
+---------------------------*/
+
+.image a:link { color: #F1ECD9; }
+.image a:active {
+    background-color: #F1ECD9;
+    color: #F1ECD9;
+}
+.image a:visited { color: #F1ECD9; }
+.image a:hover {
+    background-color: #F1ECD9;
+    color: #F1ECD9;
+}
+							
+/*---------------------------
+Anchors of class "pub_content" will
+appear with the following
+color scheme:
+#670001 - "Crimson"
+#000000 - Black
+#F1ECD9 - "Cream"
+---------------------------*/
+
+.pub_content a:link {
+    color: #670001; 
+    font-weight: bold;
+}
+.pub_content a:active {
+    background-color: #000000;
+    color: #F1ECD9;
+}
+.pub_content a:visited { color: #670001; font-weight: bold; }
+.pub_content a:hover {
+    background-color: #000000;
+    color: #F1ECD9;
+}
+
+/*---------------------------
+All div borders will have
+the following styling
+---------------------------*/
+
+div {
+    border: solid 1px #F1ECD9;
+}
+
+/*---------------------------
+The div #frame will provide
+the frame for the header, 
+sitenav, content, extlinks,
+and footer divs
+---------------------------*/
+		
+#frame {
+    width: 962px;
+    margin: auto;
+    background-color: #F1ECD9;
+}
+			 
+/*---------------------------
+The header div appears at the
+top of the page and will contain
+the logo of the website
+---------------------------*/			 
+
+#header {
+    text-align: center;
+    background-color: #000000;
+    color: #F1ECD9;
+    width: 960px;
+    padding: 0px;
+}
+
+.header_text h1 {
+    font-size: 130%;
+    white-space: nowrap;
+}
+															
+.header_text h3 {
+    font-size: 88%;
+    white-space: nowrap;
+}
+				
+/*---------------------------
+The div #container will provide
+the background for the sitenav
+and content, allowing the sitenav
+background to scale with the content
+---------------------------*/
+			 
+#container {
+    float: left;
+    margin-left: 1px;
+    margin-top: -1px;
+    background-image: url(images/background.png);
+    background-repeat: repeat-y;
+    min-height: 600px;
+}
+
+/*---------------------------
+The sitenav div contains the 
+links which navigate through
+the website
+---------------------------*/
+
+#sitenav {
+    border: none;
+    float: left;
+    background-color: #000000;
+    color: #F1ECD9;
+    width: 168px;
+    text-align: left;
+    line-height: 170%;
+}
+				 
+/* Drop down menus, from suckerfish at htmldog.com */
+				 
+#navlist, #navlist ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#navlist a {
+    display: block;
+    width: 9.5em;
+    border: 0;
+    border-bottom: 1px dotted #F1ECD9;
+    margin-left: 0.5px;
+    margin-top: -1px;
+    padding: 0 0.5em;
+}
+
+#navlist li {
+    float: left;
+    width: 10em;
+}
+
+#navlist li ul a:hover {
+    background-color: #670001;
+    color: #FFFFFF;
+}
+
+#navlist li ul {
+    position: absolute;
+    width: 10em;
+    left: -999em;
+    margin-left: 10.5em;
+    margin-top: -1.8em;
+}
+
+#navlist li ul a {
+    display: block;
+    width: 9.5em;
+    border-top: 1px dotted #F1ECD9;
+    padding: 0 0.5em;
+    background-color: #000000;
+    color: #F1ECD9;
+}
+
+#navlist li:hover ul, #navlist li.sfhover ul { left: auto; }
+
+/*---------------------------
+The content div contains
+the content of each webpage
+---------------------------*/				 
+				 
+#content {
+    margin-left: 10px;
+    float: left;
+    background-color: #F1ECD9;
+    text-align: center;
+    width: 690px;
+    line-height: 130%;
+}
+				 
+#news { text-align: left; }
+.section_header { text-align: left; }
+
+.section_content { text-align: justify; }
+
+#content ol { text-align: justify; }
+
+#content ul { text-align: justify; }
+				 
+.sponsorlogo { margin: auto; }
+
+#content .sponsordescript { text-align: justify; }
+				 
+#content p {
+    clear: both;
+    margin: 0px;
+    padding: 10px;
+}
+				 
+form div { margin-bottom: 5px; }
+
+label {
+    display: block;
+    float: left;
+    width: 150px;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 200px;
+    margin-right: -250px;
+}
+
+input.submit {
+    float: left;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+.link_table {
+    background-color: #670001;
+    color: #F1ECD9;
+    text-align: left;
+}
+							 
+.interior {
+    text-align: left;
+    line-height: 130%;
+}
+
+.link {
+    text-align: right;
+    line-height: 130%;
+}
+			
+.rsrch_head {
+    background-color: #670001;
+    color: #F1ECD9;
+    text-align: left;
+    padding: 0.5em;
+}
+						
+.rsrch_description td {
+    background-color: #000000;
+    color: #F1ECD9;
+    text-align: left;
+    padding: 0.5em;
+}
+									 
+.task {
+    text-align: left;
+    padding: 0.5em;
+}
+
+.pub_head {
+    background-color: #670001;
+    color: #F1ECD9;
+    text-align: left;
+    margin: 0;
+    padding: 0.5em;
+}
+					
+.pub_descr td {
+    background-color: #000000;
+    color: #F1ECD9;
+    text-align: left;
+    margin: 0;
+    padding: 0.5em;
+}
+					 
+.pub_content td {
+    text-align: left;
+    margin: 0;
+    padding: 0.5em;
+}
+                                                                 				 
+/*---------------------------
+The extlinks div contains 
+links that take the user to
+external websites
+---------------------------*/
+				 
+#extlinks {
+    clear: both;
+    background-color: #000000;
+    color: #F1ECD9;
+    text-align: center;
+    width: 960px;
+}
+					
+#extlinks p {
+    margin: 0px;
+    padding: 10px;
+}
+
+/*---------------------------
+The footer div contains info
+about contact, website updates,
+and copyright notice
+---------------------------*/					
+					
+#footer {
+    background-color: #000000;
+    color: #F1ECD9;
+    text-align: center;
+    width: 960px;
+}			
+#footer address {
+    margin: 0px;
+    padding: 10px;
+}
