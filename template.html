@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- this is a template for creating new webpages -->
+<!-- this template was created by Ben Dowdell -->
+
+<html>
+
+<head>
+
+<title>AASPI | NEW_PAGE_NAME</title>
+
+<!-- The meta tag describes the way the page's characters are encoded -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- The <link> tag is used to reference the CSS style sheet
+    which describes how the page is styled and designed.
+    This file contains settings for colors, fonts, etc. -->
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<!-- Drop down menus from suckerfish at htmldog.com -->
+<script type="text/javascript">
+	sfHover = function() {
+		var sfEls = document.getElementById("navlist").getElementsByTagName("li");
+		for (var i=0; i<sfEls.length; i++) {
+			sfEls[i].onmouseover=function() {
+				this.className+=" sfhover";
+			}
+		 	sfEls[i].onmouseout=function() {
+				this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+			}
+		}
+	}
+	if (window.attachEvent) window.attachEvent("onload", sfHover);
+</script>
+<!-- This javascript enables drop down menus when the mouse hovers over
+    the selection.  This is used currently when the mouse hovers over the 
+    "members" menu item -->
+</head>
+
+<body>
+<div id="frame">
+<div id="header">
+<div>
+<!-- the table below serves as the top banner -->
+<table border="0" width="100%" cellspacing="0" cellpadding="5" summary="header">
+	<tr>
+		<td rowspan="2"><img src="images/aaspi.png" alt="AASPI" /></td>
+		<td class="header_text"><h1>AASPI @ ConocoPhillips School of Geology &amp; Geophysics</h1></td>
+		<td rowspan="2"><img src="images/cpsgg.png" alt="CPSGG" /></td>
+	</tr>
+	<tr>
+		<td class="header_text"><h3>Attribute Assisted Seismic Processing &amp; Interpretation | The University of Oklahoma</h3></td>
+	</tr>
+</table>
+</div>
+</div>
+
+<!-- This list serves as the site navigation on the left pane -->
+<!-- If a new page is to be added to the site navigation menu, do so here using <li></li> tags -->
+<div id="container">
+<div class="nav" id="sitenav">
+<ul id="navlist">
+	<li><a href="index.html">home</a></li>
+	<li><a href="about.html">about</a></li>
+	<li><a href="members.html">members</a>
+		<ul>
+			<li><a href="faculty.html">principal investigators</a></li>
+			<li><a href="students.html">students</a></li>
+			<li><a href="sponsors.html">sponsors</a></li>
+		</ul>
+	</li>
+	<li><a href="documentation.html">documentation</a></li>
+	<li><a href="research.html">research</a></li>
+	<li><a href="publications.html">publications</a></li>
+	<li><a href="resources.html">resources</a></li>
+	<li><a href="contact.html">contact</a></li>
+	<li><a href="upload">downloads</a></li>
+    <li><a href="template.html">new_page_name</a></li> <!-- This is where you would put a new navigation link -->
+</ul>
+</div>
+
+<!-- This div container holds the main page content, and this is where your changes should go -->
+<div class="cont" id="content">
+
+<h2>NEW_PAGE_NAME</h2>
+
+<!-- PUT THE BULK OF THE NEW PAGE HERE -->
+
+<!-- This is a sample table -->
+<table border="1" width="100%" cellspacing="0" cellpadding="0" summary="Template">
+    <col span="1" width="70%" />
+    <col span="1" width="30%" />
+    <tbody>
+        <tr>
+            <th colspan="2" class="pub_head">This is a table heading</th> <!-- class="pub_head" is a style used on the page publications.html -->
+        </tr>
+        <tr class="pub_descr"> <!-- class="pub_descr" is a style used on the page publications.html -->
+            <td>Big Column</td>
+            <td>Small Column</td>
+        </tr>
+        <tr class="pub_content"> <!-- class="pub_content" is a style used on the page publications.html -->
+            <td>This is a space where you can put stuff...</td>
+            <td>More can go here!</td>
+        </tr>
+        <tr> <!-- This row has no specific styling and will use the defaults for the page! -->
+            <td>Stuff goes here using the page's default style</td>
+            <td>Likewise!</td>
+        </tr>
+    </tbody> <!-- Be sure to close the table body -->
+</table> <!-- And also close the table -->
+
+<p>This is a sample paragraph using the paragraph tags.  This will create a block of text until you close the tag.
+Unless you specifically format it, the text will continue uninterrupted until you close the tag, only breaking for
+ endlines.  This paragraph uses the page default of centered text justification.  If you want to actually break lines,
+ <br /> you must do so <strong>explicitly using the break tag.</strong>  Use the style.css sheet to adjust the way the
+  page is formatted</p>
+
+<p class="section_content">Notice that the default is for the text to use a centered justification.  Here I am 
+using the section_content class from the homepage which specifies that text should be left justified.</p>
+
+<!-- the hr tag creates a horizontal rule (line) across the page -->
+
+<hr />
+
+<!-- An example of different headings -->
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+
+<hr />
+
+<!-- Lets examine ordered and unordered lists -->
+
+<p class="section_content">Let's take a look at ordered and unordered lists!</p>
+
+<!-- Ordered first -->
+
+<ol>
+    <li>This is item number one</li>
+    <li>This is item number two</li>
+    <li>And so on and so forth</li>
+    <li>We create ordered lists using the ol tag</li>
+</ol>
+
+<!-- Unordered next -->
+
+<ul>
+    <li>This is the first item</li>
+    <li>This is item number two</li>
+    <li>And so on and so forth</li>
+    <li>We create unordered lists using the ul tag</li>
+    <li>Unordred lists are good when you don't want numbers</li>
+    <li><ul>
+            <li>You can even have a list within a list!</li>
+            <li>You simply make a list element a list</li>
+        </ul></li>
+</ul>
+
+<p class="section_content">I use unordered lists to create the site navigation menu on the left hand side.</p>
+
+<p class="section_content">I use the style.css sheet to remove the bulletpoints for my unordered list I used for the site navigation menu.</p>
+
+<p class="section_content">This is an example of how to make hyperlinks.  This one links to <a href="http://www.google.com">Google</a></p>
+
+<!-- Putting the image below in this div using class="image" will eliminate the active background hover the image is moused over -->
+<div class="image">
+    <p>And this one links to <a href="http://www.ou.edu" target="_blank"><img src="images/ou.png" alt="OU" /></a> and opens in a new tab</p>
+</div>
+
+</div>
+</div>
+
+<!-- these are external links at the bottom of the page -->
+<div class="nav" id="extlinks">
+<p><a href="http://www.ou.edu/mcee/geology.html">ConocoPhillips School of Geology &amp; Geophysics</a> | <a href="http://www.ou.edu/mcee.html">Mewbourne College  of Earth &amp; Energy</a> | <a href="http://www.ou.edu/web.html">The University  of Oklahoma</a></p>
+</div>
+
+<!-- this is contact and copyright info for AASPI, CPSGG, MCEE, and OU -->
+<div id="footer">
+<address>Suite 872, Sarkeys Energy Center, 100 E. Boyd St., Norman, OK 73019<br />
+Date of last revision: 06 June, 2015<br />
+&#169; Copyright 2015 The Board of Regents of the University of Oklahoma | All 
+Rights Reserved<br /></address>
+<img src="images/ou.png" alt="OU" />
+</div>
+</div>
+</body>
+</html>

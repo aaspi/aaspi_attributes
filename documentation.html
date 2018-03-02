@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- The <link> tag is used to reference the CSS style sheet which
+	describes how the page is styled and designed -->
+<link rel="stylesheet" href="style.css" type="text/css" />
+<!-- Drop down menus from suckerfish at htmldog.com -->
+<script type="text/javascript">
+	sfHover = function() {
+		var sfEls = document.getElementById("navlist").getElementsByTagName("li");
+		for (var i=0; i<sfEls.length; i++) {
+			sfEls[i].onmouseover=function() {
+				this.className+=" sfhover";
+			}
+			sfEls[i].onmouseout=function() {
+				this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+			}
+		}
+	}
+	if (window.attachEvent) window.attachEvent("onload", sfHover);
+</script>
+</head>
+
+
+<body>
+<!-- the <div> tag is used to create a "container" for each componentof the web page so that each component can be styled using CSS stylesheets to create the layout of the website -->
+<!-- The <h1> and <h3> tags are the main headers of the page -->
+<div id="frame">
+<div id="header">
+	<div>
+		<table border="0" width="100%" cellspacing="0" cellpadding="5" summary="header">
+			<tr>
+				<td rowspan="2"><img src="images/aaspi.png" alt="AASPI" /></td>
+				<td class="header_text">
+				<h1>AASPI @ ConocoPhillips School of Geology &amp; Geophysics</h1>
+				</td>
+				<td rowspan="2">
+				<img src="images/cpsgg.png" alt="CPSGG" />
+				</td>
+			</tr>
+			<tr>
+				<td class="header_text">
+				<h3>Attribute Assisted Seismic Processing &amp; Interpretation | The University of Oklahoma</h3>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div id="container">
+    <div class="nav" id="sitenav">
+        <ul id="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About AASPI</a></li>
+            <li><a href="members.html">Members</a>
+                <ul>
+                <li><a href="faculty.html">Principal investigators</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="it_support.html">IT support</a></li>
+                <li><a href="sponsors.html">Industry Sponsors</a></li>
+                <li><a href="faculty/tim.html">In Memoriam</a></li>
+                </ul>
+            </li>
+            <li><a href="documentation.html">Software documentation</a></li>
+            <li><a href="releasenotes.html">Software updates and enhancements</a></li>
+            <li><a href="workplan.html">Research Workplan</a></li>
+            <li><a href="Theses.html">Theses and dissertations</a></li>
+            <li><a href="submitted.html">Submitted papers 2018</a></li>
+            <li><a href="publications.html">Published papers 2009-2018</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="upload">Downloads</a></li>
+        </ul>
+    </div>
+
+	
+</ul>
+</div>
+
+<div class="cont" id="content">
+<h3>AASPI Software Documentation</h3>
+<table border="1" width="100%" cellspacing="0" cellpadding="0" summary="Documentation">
+	<col span="1" width="70%" />
+	<col span="1" width="30%" />
+	<tbody>
+
+		<tr><th colspan="2" class="pub_head">AASPI Software Documentation - January, 2017 Release</th></tr>
+		<tr class="pub_descr">
+			<td>Section</td>
+			<td>Link</td>
+			<div class="cont" id="content">
+                </tr>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<! Software structure
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">Software Structure</b></th>
+</tr>
+
+		<tr class="pub_content">
+			<td>AASPI Software Structure</td>
+			<td><a href="documentation/Software_Installation-AASPI_software_structure.pdf" target="_blank">AASPI Software Structure</a></td>
+			
+			<tr class="pub_content">
+			<td>Windows requirements and installation guide</td>
+			<td><a href="documentation/Software_Installation-Windows.pdf" target="_blank">AASPI under Windows</a></td>
+		</tr>
+
+		</tr>
+		<tr class="pub_content">
+			<td>Linux requirements and installation guide</td>
+			<td><a href="documentation/Software_Installation-Linux.pdf" target="_blank">AASPI under Linux</a></td>
+			
+			<tr class="pub_content">
+			<td>Windows requirements and installation guide</td>
+			<td><a href="documentation/Software_Installation-Windows.pdf" target="_blank">AASPI under Windows</a></td>
+		</tr>
+		</tr>
+		<tr class="pub_content">
+			<td>Accessing Linux and Checking your Environmental Variables</td>
+			<td><a href="documentation/Software_Installation - Accessing Linux and Checking your Environmental Variables.pdf" target="_blank">Linux Access</a></td>
+		</tr>
+		<tr class="pub_content">
+			<td>Software Parallelization</td>
+			<td><a href="documentation/Overview-AASPI_Software_Parallelization.pdf" target="_blank">Software Parallelization</a></td>
+		</tr>
+		<tr class="pub_content">
+			<td>Setting AASPI default parameters</td>
+			<td><a href="documentation/Overview-Setting_AASPI_Default_Parameters.pdf" target="_blank">The Set AASPI Default Parameters Tab</a></td>
+		</tr>
+		
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<! Data Conversion
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">Data Conversion</b></th>
+</tr>
+
+		<tr class="pub_content">
+			<td> Converting 3D poststack data from SEGY to AASPI format</td>
+			<td><a href="documentation/Data_Conversion-Converting_poststack_data_from_SEGY_to_AASPI_formats.pdf" target="_blank"></b> The SEGY to AASPI format conversion GUI </a></td>
+		</tr>
+		<tr class="pub_content">
+			<td> Converting 3D poststack data from AASPI to SEGY format</td>
+			<td><a href="documentation/Data_Conversion-Converting_poststack_data_from_AASPI_to_SEGY_formats.pdf" target="_blank"></b>The AASPI to SEGY format conversion GUI </a></td>
+		</tr>
+		<tr class="pub_content">
+			<td> Converting 3D poststack data from ZGY to AASPI format</td>
+			<td><a href="documentation/Data_Conversion-Converting_postack_data_from_ZGY_to_AASPI_formats.pdf" target="_blank"></b> The ZGY to AASPI format conversion GUI </a></td>
+		</tr>
+		<tr class="pub_content">
+			<td> Converting 3D poststack data from AASPI to ZGY format</td>
+			<td><a href="documentation/Data_Conversion-Converting_poststack_data_from_AASPI_to_ZGY_formats.pdf" target="_blank"></b>The AASPI to ZGY format conversion GUI </a></td>
+		</tr>
+		<tr class="pub_content">
+			<td> Converting multiple 2D SEGY-format seismic lines to a single pseudo-3D AASPI-format padded volume </td>
+			<td><a href="documentation/Other_Utilities-2D_seismic_utilities.pdf" target="_blank"></b>2D SEGY to AASPI format conversion GUI </a></td>
+		</tr>
+		<tr class="pub_content">
+			<td> Converting a single pseudo-3D AASPI-format padded volume to multiple 2D SEGY-format seismic lines</td>
+			<td><a href="documentation/Other_Utilities-2D_seismic_utilities.pdf" target="_blank"></b>2D AASPI to SEGY foramt conversion GUI </a></td>
+		</tr>
+<! ===========================================================================================================================>
+<! POST STACK ATTRIBUTES                                                                                                      >
+<! ===========================================================================================================================>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">------------------------------------------------------------------------------------------</th>
+</tr>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">POST STACK ATTRIBUTE GENERATION AND ANALYSIS </b> (aaspi_util GUI)</th>
+</tr>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">------------------------------------------------------------------------------------------</th>
+</tr>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<! Geometric Attributes 
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">Geometric Attributes</b></th>
+</tr>
+        
+		<tr class="pub_content">
+			<td>Computing Structural Dip</td>
+			<td><a href="documentation/Volumetric_Attributes-dip3d.pdf" target="_blank">Program dip3d</a></td>
+		</tr>
+		<tr class="pub_content">
+			<td>Computing Filter Dip Components </td>
+			<td><a href="documentation/Volumetric_Attributes-filter_dip_components.pdf" target="_blank">Program filter_dip_components</a></td>
+		</tr>
+		<tr class="pub_content">
+			<td>Computing Similarity Attributes</td>
+			<td><a href="documentation/Volumetric_Attributes-similarity3d.pdf" target="_blank">Program similarity3d</a></td>
+		</tr>
+				<tr class="pub_content">
+			<td>Structure-oriented Filtering of Poststack Data</td>
+			<td><a href="documentation/Volumetric_Attributes-sof3d.pdf" target="_blank">Program sof3d</a></td>
+		</tr>
+		</tr>
+		<tr class="pub_content">
+			<td>Computing Volumetric Curvature, Rotation, and Reflector Convergence</td>
+			<td><a href="documentation/Volumetric_Attributes-curvature3d.pdf" target="_blank">Program curvature3d</a></td>
+		</tr>
+	        </tr>
+		<tr class="pub_content">
+			<td>Computing Apparent Dip and Apparent Amplitude Gradients</td>
+			<td><a href="documentation/Volumetric_Attributes-apparent_cmpt.pdf" target="_blank">Program apparent_cmpt</a></td>
+		</tr>
+	        </tr>
+		<tr class="pub_content">
+			<td>Computing Euler Curvature</td>
+			<td><a href="documentation/Volumetric_Attributes-euler_curvature.pdf" target="_blank">Program euler_curvature</a></td>
+		</tr>
+		<tr class="pub_content">
+			<td>Generating Texture Attributes</td>
+			<td><a href="documentation/Volumetric_Attributes-glcm3d.pdf" target="_blank">Program glcm3d</a></td>
+		</tr>
+		<tr class="pub_content">
+			<td> Computing volumetric estimates of the S/N ratio</td>
+			<td><a href="documentation/Volumetric_Attributes-disorder.pdf" target="_blank">Program disorder</a></td>
+		</tr>
+		
+<! --------------------------------------------------------------------------------------------------------------------------->
+<! Spectral decomposition attributes                                                                                          >
+<! --------------------------------------------------------------------------------------------------------------------------->
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">Spectral Decomposition Attributes</b></th>
+</tr>
+		
+		<tr class="pub_content">
+			<td>Computing Spectral Components <br>  ** Complex Matching Pursuit </td>
+			<td><a href="documentation/Spectral_Attributes-spec_cmp.pdf" target="_blank">Program spec_cmp</b></a></td>
+		</tr>
+	
+		<tr class="pub_content">
+			<td>Computing Spectral Components <br>  ** Continuous Wavelet Transform</td>
+			<td><a href="documentation/Spectral_Attributes-spec_cwt.pdf" target="_blank">Program spec_cwt</b></a></td>
+		</tr>
+		<tr class="pub_content">
+			<td>Computing Spectral Components <br> ** Maximum entropy spectral analysis </td>
+			<td><a href="documentation/Spectral_Attributes-spec_max_entropy.pdf" target="_blank">Program spec_max_entropy</b></a></td>
+		</tr>
+		</tr>
+		<tr class="pub_content">
+			<td>Computing Spectral Components <br> ** Cross-correlation </td>
+			<td><a href="documentation/Spectral_Attributes-spectral_probe.pdf" target="_blank">Program spectral_probe</b></a></td>
+		</tr>
+		</tr>
+		<tr class="pub_content">
+			<td>Computing Spectral Components <br> ** Apply 2D CWT to time or flattened slices</td>
+			<td><a href="documentation/Spectral_Attributes-kxky_cwt.pdf" target="_blank">Program kxky_cwt</b></a></td>
+		</tr>
+<! --------------------------------------------------------------------------------------------------------------------------->
+<! Single trace attribute 
+<! --------------------------------------------------------------------------------------------------------------------------->
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">Single Trace Attributes</b></th>
+</tr>
+
+<tr class="pub_content">
+<td>Computing Instantaneous Attributes <br>  **  Complex Attributes and Amplitude Volume Transform (AVT)</td>
+<td><a href="documentation/Single_trace_attributes-Instantaneous_attributes.pdf" target="_blank">Program instantaneous_attributes</a></td>
+</tr>
+	
+<! --------------------------------------------------------------------------------------------------------------------------->
+<! Formation attribute analysis
+<! --------------------------------------------------------------------------------------------------------------------------->
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">Formation Attribute Analysis</b></th>
+</tr>
+			
+<tr class="pub_content">
+<td>Flattening and Generating Stratal Slices</td>
+<td><a href="documentation/Formation_Attributes-flatten_and_stratal_slice.pdf" target="_blank">Programs flatten, vector_flatten, stratal_slice, and
+vector_stratal_slice</a></td>
+</tr>
+	
+<tr class="pub_content">
+<td> Extracting Complex Principal Component Spectra</td>
+<td><a href="documentation/Formation_Attributes-complex_pca_spectra.pdf" target="_blank">Program complex_pca_spectra</a></td>
+</tr>
+<tr class="pub_content">
+<td>Formation Q-estimation </td>
+<td><a href="documentation/Workflows-Q_estimation_workflow.pdf" target="_blank">Programs complex_stratal_slice,complex_pca, and q_estimation</a></td>
+</tr>
+		
+<! --------------------------------------------------------------------------------------------------------------------------->
+<! Volumetric classification     
+<! --------------------------------------------------------------------------------------------------------------------------->
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">Volumetric Classification</b></th>
+</tr>
+
+		<tr class="pub_content">
+			<td>Volumetric k-means clustering for 3D Seismic Facies Analysis</td>
+			<td><a href="documentation/Volumetric_Classification-kmeans3d.pdf" target="_blank">Program kmeans3d</a></td>
+		</tr>
+		
+		<tr class="pub_content">
+			<td>Volumetric principle component analysis for 3D Seismic Facies Analysis</td>
+			<td><a href="documentation/Volumetric_Classification-pca3d.pdf" target="_blank">Program pca3d</a></td>
+		</tr>
+
+		<tr class="pub_content">
+			<td>Volumetric Gaussian Mixture Models for 3D Seismic Facies Analysis</td>
+			<td><a href="documentation/Volumetric_Classification-gmm3d.pdf" target="_blank">Program gmm3d</a></td>
+		</tr>
+		
+		
+		<tr class="pub_content">
+			<td>Volumetric Self-Organizing Maps for 3D Seismic Facies Analysis</td>
+			<td><a href="documentation/Volumetric_Classification-som3d.pdf" target="_blank">Program som3d</a></td>
+		</tr>
+		
+		<tr class="pub_content">
+			<td>3D Probabilistic Seismic Facies Analysis (Generative Topographic Mapping)</td>
+			<td><a href="documentation/Volumetric_Classification-gtm3d.pdf" target="_blank">Program gtm3d</a></td>
+		</tr>
+		
+		<tr class="pub_content">
+			<td>Proximal Vector Support Machine on Seismic Data</td>
+			<td><a href="documentation/Volumetric_Classification-psvm3d.pdf" target="_blank">Program psvm3d</a></td>
+		</tr>
+		
+		<tr class="pub_content">
+			<td>Generating training dataset for supervised seismic facies classification</td>
+			<td><a href="documentation/Volumetric_Classification_make_training_clusters_documentation.pdf" target="_blank">Program make_training_clusters</a></td>
+		</tr>
+		
+<! --------------------------------------------------------------------------------------------------------------------------->
+<! Image processing                      
+<! --------------------------------------------------------------------------------------------------------------------------->
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">Image Processing</b></th>
+</tr>
+			
+		<tr class="pub_content">
+			<td> 3D Windows-based Gaussian Statistics Applications</td>
+			<td><a href="documentation/Image_Processing-stat3d.pdf" target="_blank">Program stat3d</a></td>
+		</tr>
+
+		
+		<tr class="pub_content">
+			<td> 3D Kuwahara Filter in seismic facies analysis</td>
+			<td><a href="documentation/Image_Processing-kuwahara3d.pdf" target="_blank">Program kuwahara3d</a></td>
+		</tr>
+		
+		<tr class="pub_content">
+			<td>Filtering a single attribute</td>
+			<td><a href="documentation/Image_Processing-filter_single_attribute.pdf" target="_blank">Program filter_single_attribute</a></td>
+		</tr>
+		
+		<tr class="pub_content">
+			<td>Enhancing faults and axial planes</td>
+			<td><a href="documentation/Image_Processing-fault_enhancement.pdf" target="_blank">Program fault_enhancement</b></a></td>
+		</tr>
+		
+		<tr class="pub_content">
+			<td>Skeletonization of enhanced faults</td>
+			<td><a href="documentation/Image_Processing-skeletonize3d.pdf" target="_blank">Program skeletonize3d </b></a></td>
+		</tr>
+		
+		<tr class="pub_content">
+			<td>Fault connectivity</td>
+			<td><a href="documentation/Image_Processing-fault_connectivity.pdf" target="_blank">Program fault_connectivity </b></a></td>
+		</tr>
+		
+<! --------------------------------------------------------------------------------------------------------------------------->
+<! Attribute correlation tools           
+<! --------------------------------------------------------------------------------------------------------------------------->
+<tr class="pub_content">
+<th colspan="3" class="pub_descr"><b>Attribute Correlation Tools</b></th>
+</tr>
+		
+		<tr class="pub_content">
+			<td>Correlating seismic attributes to production volumes</td>
+			<td><a href="documentation/Attribute_Correlation-cigar_probe.pdf" target="_blank">Program cigar_probe</a></td>
+		</tr>
+		
+		
+		<tr class="pub_content">
+			<td>Generating volumes to correlate with production data</td>
+			<td><a href="documentation/Attribute_Correlation-azimuthal_fault_density.pdf" target="_blank">Program azimuthal_fault_density</a></td>
+		</tr>
+		
+		</tr>
+		<tr class="pub_content">
+			<td>3d Vector correlation</td>
+			<td><a href="documentation/Attribute_Correlation-vector_correlation3d.pdf" target="_blank">Program vector_correlation</a></td>
+		</tr>
+		
+<! --------------------------------------------------------------------------------------------------------------------------->
+<! Display tools
+<! --------------------------------------------------------------------------------------------------------------------------->
+<tr class="pub_content">
+<th colspan="3" class="pub_descr"><b>Display Tools</b></th>
+</tr>
+		<tr class="pub_content">
+		<td> Modulating a polychormatic attribute by a second attribute plotted against lightness </td>
+						<td><a href="documentation/Display_Tools-hlplot.pdf" target="_blank">Program hlplot </a></td>
+				</tr>
+
+                <tr class="pub_content">
+			<td> Modulating a polychormatic attribute by a second attribute plotted against saturation </td>
+                        <td><a href="documentation/Display_Tools-hsplot.pdf" target="_blank">Program hsplot </a></td>
+                </tr>
+
+                <tr class="pub_content">
+			<td> Modulating a polychormatic attribute by a second attribute plotted against saturation and a third attribute plotted against lightness </td>
+                        <td><a href="documentation/Display_Tools-hlsplot.pdf" target="_blank">Program hlsplot </a></td>
+                </tr>
+
+                <tr class="pub_content">
+			<td> Plotting 3 attributes against Red-Green-Blue or against Cyan-Magenta-Yellow </td>
+                        <td><a href="documentation/Display_Tools-rgb_cmy_plot.pdf" target="_blank">Program rgb_cmy_plot </a></td>
+                </tr>
+
+                <tr class="pub_content">
+			<td> Crossplotting 2 attributes against a 2D color bar </td>
+                        <td><a href="documentation/Display_Tools-crossplot.pdf" target="_blank">Program crossplot </a></td>
+                </tr>
+
+				<tr class="pub_content">
+			<td> Generating volumetric rose diagrams</td>
+						<td><a href="documentation/Display_Tools-generate_roses.pdf" target="_blank">Program generate_roses</a></td>
+				</tr>
+
+				<tr class="pub_content">
+			<td> QC plotting of AASPI-format poststack seismic and attribute data volumes</td>
+						<td><a href="documentation/Display_Tools-AASPI_QC_Plotting.pdf" target="_blank">Program aaspi_util - QC Plotting </a></td>
+				</tr>
+				
+                <tr class="pub_content">
+			<td> Main Plotting GUI </td>
+                        <td><a href="documentation/Display_Tools-aaspi_plot.pdf" target="_blank">Program aaspi_plot </a></td>
+                </tr>
+				
+                <tr class="pub_content">
+			<td> Corendering 2 attributes using transparency </td>
+                        <td><a href="documentation/Display_Tools-aaspi_corender.pdf" target="_blank">Program aaspi_corender </a></td>
+                </tr>
+				
+                <tr class="pub_content">
+			<td> Plotting higher dimension volumes (spectral component, prestack migrated) </td>
+                        <td><a href="documentation/Display_Tools-AASPI_Prestack_Viewer.pdf" target="_blank">Program aaspi_aaspiviewer_prestack </a></td>
+                </tr>
+				
+                <tr class="pub_content">
+			<td> Plotting a simple graph line </td>
+                        <td><a href="documentation/Display_Tools-graph_plot.pdf" target="_blank">Program aaspi_graph </a></td>
+                </tr>
+		
+<! --------------------------------------------------------------------------------------------------------------------------->
+<! Other utilities
+<! --------------------------------------------------------------------------------------------------------------------------->
+<tr class="pub_content">
+<th colspan="3" class="pub_descr"><b>Other Utilities</b></th>
+</tr>
+                <tr class="pub_content">
+			<td> "Slicing" a volume </td>
+                        <td><a href="documentation/Other_Utilities-slice.pdf" target="_blank">Program aaspi_slice </a></td>
+                </tr>
+
+                <tr class="pub_content">
+			<td> "Unslicing" a volume </td>
+                        <td><a href="documentation/Other_Utilities-unslice.pdf" target="_blank">Program aaspi_unslice </a></td>
+                </tr>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<! Poststack data workflows
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr"><b>Poststack Data Workflows</b></th>
+</tr>
+			
+<tr class="pub_content">
+<td> Geometric Attribute Workflow</td>
+<td><a href="documentation/Workflows-geom_attr_workflow.pdf" target="_blank">The geom_attr_workflow GUI</a></td>
+</tr>
+		
+<tr class="pub_content">
+<td> Attribute-assisted footprint suppression</td>
+<td><a href="documentation/Workflows-footprint_suppression_workflow.pdf" target="_blank">The attribute-assisted_footprint_suppression_workflow  GUI</a></td>
+</tr>
+
+<tr class="pub_content">
+<td> Iterative fault enhancement</td>
+<td><a href="documentation/Workflows-iterative_fault_enhancement_workflow.pdf" target="_blank">The iterative_fault_enhancement_workflow GUI </a></td>
+</tr>
+		
+<! ===========================================================================================================================>
+<! PRESTACK ATTRIBUTES                                                                                                      >
+<! ===========================================================================================================================>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">------------------------------------------------------------------------------------------</th>
+<tr>
+<th colspan="3" class="pub_descr"><b>PRESTACK ATTRIBUTE GENERATION AND ANALYSIS</b> (aaspi_util_prestack GUI)</th>
+<tr>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr">------------------------------------------------------------------------------------------</th>
+<tr>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<! Prestack data conditioning
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr"><b>Prestack Data Conditioning</b></th>
+</tr>
+			
+		<tr class="pub_content">
+			<td>Prestack Structure Oriented Filtering</td>
+			<td><a href="documentation/Prestack_Data_Conditioning-sof_prestack.pdf" target="_blank">Program sof_prestack</a></td>
+		</tr>
+		
+		<tr class="pub_content">
+			<td>Non-stretch NMO of prestack migrated gathers</td>
+			<td><a href="documentation/Prestack_Data_Conditioning-nmo_rnmo_and_mpnmo.pdf" target="_blank">Program  nmo, rnmo, and nmo_spec</a></td>
+		</tr>
+		
+		<tr class="pub_content">
+			<td> Interactive Velocity Analysis</td>
+			<td><a href="documentation/Prestack_Data_Conditioning-iva.pdf" target="_blank">Program  iva</a></td>
+		</tr>
+		
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<! Prestack data analysis
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr"><b>Prestack Data Analysis</b></th>
+</tr>
+			
+			<tr class="pub_content">
+			<td> Computing spectral components using the continuous wavelet transforms</td>
+			<td><a href="documentation/Volumetric-Attributes-spec_cwt.pdf" target="_blank">Program  spec_cwt</a></td>
+		</tr>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<! Seismic imaging             
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr"><b>Seismic Imaging</b></th>
+</tr>
+			
+			<tr class="pub_content">
+			<td>Prestack: AASPI Viewer, AASPI to SEGY, Compute  Fold</td>
+			<td><a href="documentation/Seismic_Imaging -Program_aaspi_util_prestack.pdf" target="_blank">Program aaspi_util_prestack</a></td>
+		</tr>
+		
+		<tr class="pub_content">
+			<td>Prestack time migration</td>
+			<td><a href="documentation/Seismic_Imaging-azim_offset_mig.pdf" target="_blank">Program azim_offset_mig</a></td>
+		</tr>
+			</tr>
+			<tr class="pub_content">
+			<td>Non_stretch NMO on prestack migrated gathers</td>
+			<td><a href="documentation/Section_26_Non_stretch_NMO_of_prestack_migrated_gathers_Programs_nmo_nmo_reverse_and_nmo_spec.pdf" target="_blank">Program mpnmo</a></td>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<! Prestack data workflows
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<tr class="pub_content">
+<th colspan="3" class="pub_descr"><b>Prestack Data Workflows</b></th>
+</tr>
+			<tr class="pub_content">
+			<td>Coherent noise suppression workflow</td>
+			<td><a href="documentation/Workflows-Coherent_noise_suppression_workflow.pdf" target="_blank"> The coherent noise suppression workflow</a></td>
+		</tr>
+		<tr class="pub_content">
+			<td>Prestack Struture Oriented Filtering</td>
+			<td><a href="documentation/Prestack_Workflows-Prestack_structure_oriented_filtering.pdf" target="_blank">The Structure-oriented filtering workflow</a></td>
+		</tr>
+		
+			</tr>
+	</tbody>
+</table>
+
+<p>back to <a href="publications.html">publications</a></p>
+<p>back to <a href="index.html">AASPI home</a></p>
+
+</div>
+</div>
+
+<!-- these are external links at the bottom of the page -->
+<div class="nav" id="extlinks">
+<p><a href="http://www.ou.edu/mcee/geology.html">ConocoPhillips School of Geology &amp; Geophysics</a> | <a href="http://www.ou.edu/mcee.html">Mewbourne College  of Earth &amp; Energy</a> | <a href="http://www.ou.edu/web.html">The University  of Oklahoma</a></p>
+</div>
+
+<!-- this is contact and copyright info for AASPI, CPSGG, MCEE, and OU -->
+<div id="footer">
+<address>Suite 872, Sarkeys Energy Center, 100 E. Boyd St., Norman, OK 73019<br />
+Date of last revision: 22 February, 2018<br />
+&#169; Copyright 2018 The Board of Regents of the University of Oklahoma | All 
+Rights Reserved<br /></address>
+<img src="images/ou.png" alt="OU" />
+</div>
+</div>
+</body>
+</html>
+
+			
+		
+		

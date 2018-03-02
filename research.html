@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>AASPI | research</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- The <link> tag is used to reference the CSS style sheet which
+		 describes how the page is styled and designed -->
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<!-- Drop down menus from suckerfish at htmldog.com -->
+
+<script type="text/javascript">
+    sfHover = function() {
+        var sfEls = document.getElementById("navlist").getElementsByTagName("li");
+        for (var i=0; i<sfEls.length; i++) {
+            sfEls[i].onmouseover=function() {
+                this.className+=" sfhover";
+            }
+            sfEls[i].onmouseout=function() {
+                this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+            }
+        }
+    }
+    if (window.attachEvent) window.attachEvent("onload", sfHover);
+</script>
+
+</head>
+
+<body>
+
+<div id="frame">
+
+<div id="header">
+    <div>
+        <table border="0" width="100%" cellspacing="0" cellpadding="5" summary="header">
+            <tr>
+                <td rowspan="2"><img src="images/aaspi.png" alt="AASPI" /></td>
+                <td class="header_text"><h1>AASPI @ ConocoPhillips School of Geology &amp; Geophysics</h1></td>
+                <td rowspan="2"><img src="images/cpsgg.png" alt="CPSGG" /></td>
+            </tr>
+            <tr>
+                <td class="header_text"><h3>Attribute Assisted Seismic Processing &amp; Interpretation | The University of Oklahoma</h3></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="container">
+    <div class="nav" id="sitenav">
+        <ul id="navlist">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about AASPI</a></li>
+            <li><a href="members.html">members</a>
+                <ul>
+                    <li><a href="faculty.html">principal investigators</a></li>
+                    <li><a href="students.html">students</a></li>
+					<li><a href="it_support.html">it support</a></li>
+                    <li><a href="sponsors.html">sponsors</a></li>
+                </ul>
+            </li>
+            <li><a href="documentation.html">software documentation</a></li>
+			<li><a href="releasenotes.html">software release notes</a></li>
+            <li><a href="research.html">research</a>
+				<ul>
+					<li><a href="attributes.html">Attributes</a></li>
+				</ul>
+			</li>
+ 			<li><a href="Theses.html">theses and dissertations</a></li>
+			<li><a href="submitted.html">submitted papers</a></li>
+            <li><a href="publications.html">publications</a></li>
+            <li><a href="resources.html">resources</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="upload">downloads</a></li>
+        </ul>
+    </div>
+
+<div class="cont" id="content">
+
+<h2>Research</h2>
+
+<p class="section_content">The AASPI Consortium is actively engaged in research seeking solutions to
+ the questions and problems facing ONG E&amp;P</p>
+
+<p class="section_content">Our R&amp;D plan is structured about M.Sc. theses and 
+Ph.D. dissertations, many of which will result in publications and software.  We 
+summarize our current plans for <strong>2015 & 2016</strong> below:</p>
+
+<ul>
+
+<li><b><a href="AASPI_workplan/2016_workplan.pdf"><b>AASPI Proposal and Workplan - APRIL 2016</b></a></li>
+
+</ul>
+
+
+
+
+<table border="1" width="110%" cellspacing="0" cellpadding="2" summary="Attribute Algs">
+    <tbody>
+        <tr>
+            <th class="rsrch_head">AASPI Deliverables - Poststack Attribute and Image Processing Algorithm Development</th>
+        </tr>
+        <tr>
+            <td>
+                <table border="1" width="100%" cellspacing="0" cellpadding="0" summary="AA info">
+                    <col span="1" width="40%" />
+                    <col span="2" width="15%" />
+					<col span="3" width="40%" />
+                    <tbody>
+                        <tr class="rsrch_description">
+                            <td>Task</td>
+                            <td>Researcher</td>
+                            <td>Position</td>
+							<td>Status</td>
+                        </tr>
+                        <tr>
+                            <td class="task">Coherence computation that adjusts to the spectra of the data (significant changes occur for depth migrated data)<br/> <b>Program :similarity3d</b></td>
+                            <td>Tengfei Lin and Kurt Marfurt </td>
+                            <td>Ph.D. Candidate, Faculty  </td>
+							<td>Will release Feb 1, 2015.Vertical and horizontal analysis window size is based on a user-defined percentile of the average spectra of the survey at a given time or depth.</td>
+                        </tr>
+                         <tr>
+                            <td class="task">Implement volumetric flexure attribute <br/> <b>Program :curvature3d</b></td>
+                            <td>Xuan Qi and Kurt Marfurt </td>
+                            <td>Ph.D. Candidate, Faculty  </td>
+							<td>Original concept written, but "maximum" flexure
+images were too busy.
+Will rework to compute
+"apparent flexure" parallel
+to a suite of strike
+directions</td>
+                      </tr>
+					        <tr>
+                            <td class="task">Inclusion of dip
+magnitude in matching
+pursuit spectral
+decomposition to
+provide a simple
+1/cosθ correction of
+peak frequencies
+measured on vertical
+traces. <br/> <b>Programs :spec_cmp; spec_cwt</b></td>
+                            <td>Tengfei Lin and Kurt Marfurt </td>
+                            <td>Ph.D. Candidate, Faculty  </td>
+							<td>Done!</td>
+                      </tr>
+					  
+					  					        <tr>
+                            <td class="task">Q estimation from
+magnitude component
+of spectral
+decomposition <br/> <b>Program :q_estimation</b></td>
+                            <td>Fangyu Li </td>
+                            <td>Ph.D. Candidate, Faculty  </td>
+							<td>Four estimation
+techniques implemented
+that have been used by
+others in estimation of Q
+is porous sandstone
+reservoirs. We have found
+the Q model to be
+unsuitable to estimate
+geometric scattering due
+to hydraulic fracturing of
+shale resource plays.</td>
+                      </tr>
+					  
+					  		  
+					  					        <tr>
+                            <td class="task">Release and calibration
+of bandwidth extension
+based on spectral
+ridges of CWT <br/> <b>Program :spec_cwt</b></td>
+                            <td>Marcilio
+Matos </td>
+                            <td>Research Scientist  </td>
+							<td>Developed prototype that
+works on complex
+spectral ridges.</td>
+                      </tr>
+					  
+					  
+					  
+					  		  
+					  					        <tr>
+                            <td class="task">Coherence fault
+enhancement using
+Laplacian of a
+Gaussian<br/> <b>Program :filter_single_attribute</b></td>
+                            <td>Kurt Marfurt </td>
+                            <td> Faculty  </td>
+							<td>Done!</td>
+                      </tr>
+					  
+				  					        <tr>
+                            <td class="task">Estimation of
+coherence "fault" strike
+and dip using
+eigenvector analysis<br/> <b>Program :filter_single_attribute</b></td>
+                            <td>Kurt Marfurt </td>
+                            <td> Faculty  </td>
+							<td>Early 2015</td>
+                      </tr>
+					  
+	  					        <tr>
+                            <td class="task">Coherence fault
+enhancement using
+directional Laplacian
+of Gaussian
+perpendicular to fault.<br/> <b>Program :filter_single_attribute</b></td>
+                            <td>Gabriel
+Machado,
+Bryce
+Hutchinson,
+Mohsen
+alAli, Tobi
+Olorunsola </td>
+                            <td> M.S., M.S.,
+Ph.D., Ph.D.
+candidates in
+Geophysics </td>
+							<td>Early 2015</td>
+                      </tr>
+					  
+					  
+		  					        <tr>
+                            <td class="task">Extension of CWT and
+CMP to prestack
+gathers<br/> <b>Programs :spec_cwt, spec_cmp</b></td>
+                            <td>Kurt
+Marfurt </td>
+                            <td> Faculty </td>
+							<td>Done!</td>
+                      </tr>	
+
+		  					        <tr>
+                            <td class="task">Data conditioning of
+complex spectral
+components along
+stratal slices<br/> <b>Programs :vector_stratal_slice,
+complex_pca_spectra,
+covert
+_aaspi_stratal_slice_ascii</b></td>
+                            <td>Tao Zhao,
+Kurt
+Marfurt</td>
+                            <td> Ph.D.
+candidate
+Geophysics,
+faculty</td>
+							<td>Required writing several
+iterations of a new
+horizon reading and
+writing library. Will
+release February 1, 2015.</td>
+
+	  					      
+
+							  <tr>
+                            <td class="task">Parallelize generative
+topological mapping
+algorithm. Modify to
+be out-of-core solution<br/> <b>Program :gtm3d</b></td>
+                            <td>
+Kurt
+Marfurt</td>
+                            <td> faculty</td>
+							<td>Will replace scalar
+implementation, gtm, in
+February 1, 2015 release.</td>
+
+                      </tr>	
+
+	  <tr>
+                            <td class="task">Parallelize selforganizing
+mapping
+algorithm. Modify to
+be out-of-core solution<br/> <b>Program :som3d</b></td>
+                            <td>
+Kurt
+Marfurt</td>
+                            <td> faculty</td>
+							<td>Mid 2015</td>
+
+                      </tr>	
+ <tr>
+                            <td class="task">Develop and calibrate
+support vector
+machines supervised
+learning algorithm<br/> <b>Program :psvm3d</b></td>
+                            <td>
+Tao Zhao</td>
+                            <td> Ph.D.
+candidate
+Geophysics</td>
+							<td>March, 2015</td>
+
+                      </tr>	
+
+ <tr>
+                            <td class="task">Tomographic
+estimation of eta for
+high resolution
+velocity scan<br/> <b>Program :new program</b></td>
+                            <td>
+Bo Zhang</td>
+                            <td> Faculty,
+MTU</td>
+							<td>Early 2015</td>
+
+                      </tr>	
+		 <tr>
+                            <td class="task">Correlate two vectors
+fields within a 3D
+window<br/> <b>Program :vector_correlation</b></td>
+                            <td>
+Shiguang
+Guo</td>
+                            <td> Ph.D. Fall
+2014</td>
+							<td>Done!</td>
+
+                      </tr>				  
+
+ <tr>
+                            <td class="task">Blocking of seismic
+lithologies to facilitate
+subsequent cluster
+analysis and salt
+delineation algorithms<br/> <b>Program :new program</b></td>
+                            <td>Jie Qi,
+Mohsen
+alAli</td>
+                            <td> Ph.D.
+candidates</td>
+							<td>2015</td>
+
+                      </tr>	
+
+ <tr>					  
+					  <td class="task">Develop GUI brushing
+tool to highlight
+features of interest to
+serve as training data
+for subsequent
+clustering algorithms<br/> <b>Program :new program</b></td>
+                            <td>students
+and Brad
+Wallet</td>
+                            <td>class project;
+CIF
+Research
+Staff</td>
+							<td>Spring 2015</td>
+                      </tr>	
+					  
+		 <tr>					  
+					  <td class="task">Develop GUI
+multilevel opacity,
+color addition, and
+color subtraction tools
+for better attribute QC<br/> <b>Program :new program</b></td>
+                            <td>students
+and Brad
+Wallet</td>
+                            <td>class project;
+CIF
+Research
+Staff</td>
+							<td>Spring 2015</td>
+                      </tr>				  
+					  
+					  
+                        </tr>
+                        </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table border="1" width="110%" cellspacing="0" cellpadding="2" summary="Attr. Calib. using Geol. ctrl">
+    <tbody>
+        <tr>
+            <th class="rsrch_head">AASPI Deliverables - Attribute Calibration using Geological Control</th>
+        </tr>
+        <tr>
+            <td>
+                <table border="1" width="100%" cellspacing="0" cellpadding="2" summary="Attr. calib.">
+                    <col span="1" width="50%" />
+                    <col span="2" width="15%" />
+					<col span="3" width="40%" />
+                    <tbody>
+                        <tr class="rsrch_description">
+                            <td>Task</td>
+                            <td>Researcher</td>
+                            <td>Affiliation</td>
+							<td>Status</td>
+                        </tr>
+                        <tr>
+                            <td class="task">Mississppi Lime: Continued correlation of attributes to
+fractures using outcrops and horizontal image logs
+(Noble County, OK)</td>
+                            <td>Trey Stearns</td>
+                            <td>M.S. Candidate,<br />Geophysics</td> <td>Summer,2015</td>
+                        </tr>
+                       
+					     <tr>
+                            <td class="task">Mississippi Lime: Prestack reprocessing and inversion
+for Mississippi Lime (Nolon Co., TX)</td>
+                            <td>Sumit Verma</td>
+                            <td>Ph.D. Candidate,<br />Geophysics</td> <td>done</td>
+                        </tr>
+					  
+					  <tr>
+                            <td class="task">Woodford Shale: Establish Proxy for TOC and
+petrofacies using 100s of wells correlated to prestack
+inversion and attributes using ANN</td>
+                            <td>Sumit Verma</td>
+                            <td>Ph.D. Candidate,<br />Geophysics</td> <td>waiting
+on data
+license</td>
+                        </tr>  
+						
+	  <tr>
+                            <td class="task">Imaging fractured basement (Mid Continent) using
+vertical image logs, gravity, magnetic, and AVAz
+analysis</td>
+                            <td>Thang Ha</td>
+                            <td>Ph.D. Candidate,<br />Geophysics</td> <td>done</td>
+                        </tr>  
+		
+  <tr>
+                            <td class="task">Correlation of AVAz to curvature</td>
+                            <td>Shiguang Guo</td>
+                            <td>Ph.D. Fall 2014.<br />Geophysics</td> <td>done</td>
+                        </tr>  
+		  <tr>
+                            <td class="task">Reprocessing of an ugly 3D legacy survey, Central
+Basement Platform</td>
+                            <td>Sumit Verma</td>
+                            <td>Ph.D. Candidate,<br />Geophysics</td> <td>Summer 2015</td>
+                        </tr>  
+						
+						  <tr>
+                            <td class="task">Correlation of flexure computation to 3D seismic on
+vertical slices</td>
+                            <td>Xuan Qi</td>
+                            <td>Ph.D. Candidate,<br />Geology</td> <td>Summer 2015</td>
+                        </tr>
+			  <tr>
+                            <td class="task">Write tutorial on attribute application to depth vs. time
+migrated volumes - focus on spectral decomposition,
+volumetric dip, and coherence.</td>
+                            <td>Tengfei Lin</td>
+                            <td>Ph.D. Candidate,<br />Geophysics</td> <td>done</td>
+                        </tr>
+						
+	  <tr>
+                            <td class="task">Write tutorial on multiattribute visualization using
+commercial software (Petrel)</td>
+                            <td>Kurt Marfurt</td>
+                            <td>Faculty</td> <td>done</td>
+                        </tr>
+  <tr>
+                            <td class="task">Write tutorial on pitfalls in attribute assisted
+interpretation of complex structure</td>
+                            <td>Kurt Marfurt</td>
+                            <td>Faculty</td> <td>done</td>
+                        </tr>
+ <tr>
+                            <td class="task">Using phase of principal component spectra to better map
+channels</td>
+                            <td>Brad Wallet</td>
+                            <td>CIF Research Scientist</td> <td>done</td>
+                        </tr>
+	 <tr>
+                            <td class="task">Use of shape attributes to construct geobodies of channel
+forms</td>
+                            <td>Brad Wallet</td>
+                            <td>CIF Research Scientist</td> <td>done</td>
+                        </tr>					
+                        </tr>
+                        </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table border="1" width="110%" cellspacing="0" cellpadding="2" summary="Cal. to Geol. ctrl">
+    <tbody>
+        <tr>
+            <th class="rsrch_head">AASPI Deliverables - Attribute Calibration using Engineering and Production Data</th>
+        </tr>
+        <tr>
+            <td>
+                <table border="1" width="100%" cellspacing="0" cellpadding="2" summary="CalGeol info">
+                     <col span="1" width="50%" />
+                    <col span="2" width="15%" />
+					<col span="3" width="30%" />
+                    <tbody>
+                        <tr class="rsrch_description">
+                            <td>Task</td>
+                            <td>Researcher</td>
+                            <td>Position</td>
+							<td>Status</td>
+                        </tr>
+                        <tr>
+                            <td class="task">Correlation of production to seismic attributes
+using Gaussian statistics: FWB</td>
+                            <td>Xuan Qi, Brad
+Wallet</td>
+                            <td>Ph.D. Candidate,
+Geophysics, CIF
+Research Scientist</td> <td>2015</td>
+                        </tr>
+                                       <td class="task">Correlation of AVAz to hydraulic fracturing</td>
+                            <td>Shiguang Guo</td>
+                            <td>Ph.D. Fall 2014.
+Geophysics</td> <td>done</td>
+                        </tr>
+						 <tr>
+                                       <td class="task">Prediction of brittleness to seismic attributes
+using PSVM supervised learning using ECS
+logs and core</td>
+                            <td>Tao Zhao, Bo
+Zhang</td>
+                            <td>Ph.D. Candidate,
+Geophysics; MTU
+faculty</td> <td>done</td>
+
+<tr>
+                                       <td class="task">Correlate prestack inversion and other
+seismic attributes to geochemical traces
+injected in multistage horizontal wells</td>
+                            <td>Lennon
+Infante</td>
+                          <td>Ph.D. Candidate,
+Geophysics</td> <td>waiting on data</td>
+</tr>
+ <td class="task">Correlate rate of penetration to prestack
+inversion and other attributes in horizontal
+Mississippi Lime wells</td>
+                            <td>Joseph Snyder</td>
+                            <td>M.S. Candidate,
+Geophysics</td> <td>2015</td>
+                        </tr>
+						</tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>					
+
+<table border="1" width="110%" cellspacing="0" cellpadding="2" summary="Cal to Eng ctrl">
+    <tbody>
+        <tr>
+            <th class="rsrch_head">AASPI Deliverables - Prestack Data Conditioning and Imaging Algorithm Development</th>
+        </tr>
+        <tr>
+            <td>
+                <table border="1" width="100%" cellspacing="0" cellpadding="2" summary"CalEng ctrl">
+                     <col span="1" width="50%" />
+                    <col span="2" width="15%" />
+					<col span="3" width="30%" />
+                    <tbody>
+                        <tr class="rsrch_description">
+                            <td>Task</td>
+                            <td>Researcher</td>
+                            <td>Position</td>
+							 <td>Status</td>
+                        </tr>
+                        <tr>
+                            <td class="task">Write GUI workflow for 3D preconditioned
+least-squares prestack time migration</td>
+                            <td>Thang Ha; Yuji Kim;
+Sumit Verma</td>
+                            <td>Ph.D. Candidates<br />Geophysics</td> <td>Spring 2015</td>
+                            </tr>
+							                          <tr>
+                            <td class="task">Prototype migration-driven 5D interpolation</td>
+                            <td>Shiguang Guo</td>
+                            <td>Ph.D. Fall 2014.Geophysics</td> <td>done</td>
+                            </tr>   
+							
+	     <tr>
+                            <td class="task">Write GUI workflow for 5D interpolation using
+preconditioned least-squares migration</td>
+                            <td>Thang Ha; Yuji Kim;
+Sumit Verma</td>
+                            <td>Ph.D. Candidates<br />Geophysics</td> <td>Spring 2015</td>
+                            </tr>						
+			<tr>
+                            <td class="task">Prototype diffraction imaging based on
+constrained least-squares migration algorithm</td>
+                            <td>Yuji Kim</td>
+                            <td>Ph.D. Candidates<br />Geophysics</td> <td>Spring 2015</td>
+                            </tr>						
+					<tr>
+                            <td class="task">Detailed interval velocity analysis to preserve
+long-offset data for improved λρ, μρ, ρ, and
+anisotropic measures sensitive to TOC</td>
+                            <td>Bo Zhang</td>
+                            <td>Faculty, MTU</td> <td>done</td>
+                            </tr>								
+						
+
+<tr>
+                            <td class="task">Wavelet based high-resolution Radon transform</td>
+                            <td>Tengfei Lin</td>
+                            <td>PhD Candidate,
+Geophysics</td> <td>2015</td>
+                            </tr>	
+							
+							<tr>
+                            <td class="task">Thin bed thickness estimation based on angle dependent
+tuning spectra</td>
+                            <td>Fangyu Li</td>
+                            <td>PhD Candidate,
+Geophysics</td> <td>2015</td>
+                            </tr>	
+							
+							<tr>
+                            <td class="task">Q or other scattering measures as a function of
+azimuth for detection of natural or induced
+fractures and/or horizontal stress field</td>
+                            <td>Fangyu Li</td>
+                            <td>PhD Candidate,
+Geophysics</td> <td>2015</td>
+
+
+<tr>
+                             <td class="task">Sample-by-sample velocity vs. azimuth software
+tool and compare and combine to AVAz analysis
+tool</td>
+                            <td>Jie Qi</td>
+                            <td>PhD Candidate,
+Geophysics</td> <td>2015</td>
+                            </tr>
+			
+<tr>
+                             <td class="task">Spectral balancing of prestack data</td>
+                            <td>Kurt Marfurt</td>
+                            <td>Faculty</td> <td>2015</td>
+                            </tr>
+			<tr>
+                            <td class="task">Generalize sof_prestack to run across offset,
+azimuths; generalize to run along x,y, offset, and
+azimuth</td>
+                            <td>Kurt Marfurt</td>
+                            <td>Faculty</td> <td>2015</td>
+                            </tr>				
+							
+<tr>
+                            <td class="task">Migration-driven converted-wave velocity
+analysis: Fort Worth Basin</td>
+                            <td>Tengfei Lin</td>
+                            <td>PhD Candidate,
+Geophysics</td> <td>2015</td>
+                            </tr>
+			
+	<tr>
+                            <td class="task">Reprocess legacy data for application of modern
+attribute analysis</td>
+                            <td>Marcus Cahoj, Bryce
+Hutchinson</td>
+                            <td>M.S. Candidates,
+Geophysics</td> <td>2015</td>
+                            </tr>
+<tr>
+                            <td class="task">2D wavelet transforms for footprint suppression
+and pattern recognition</td>
+                            <td>Mohsen alAli</td>
+                            <td>PhD Candidate,
+Geophysics</td> <td>2015</td>
+                            </tr>
+
+					<tr>
+                            <td class="task">Correlation of production to seismic attributes
+using Gaussian statistics: FWB</td>
+                            <td>Xuan Qi</td>
+                            <td>PhD Candidate,
+Geophysics</td> <td>2015</td>
+                            </tr>		
+                            </tr>	
+							
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="nav" id="extlinks">
+
+<p><a href="http://www.ou.edu/mcee/geology.html">ConocoPhillips School of Geology
+ &amp; Geophysics</a> | <a href="http://www.ou.edu/mcee.html">Mewbourne College 
+ of Earth &amp; Energy</a> | <a href="http://www.ou.edu/web.html">The University
+  of Oklahoma</a></p>
+</div>
+
+<div id="footer">
+
+<address>
+suite 872, sarkeys energy center, 100 e. boyd st., norman, ok 73019<br />
+date of last revision: 02 February, 2015<br />
+&#169; copyright 2011 the board of regents of the university of oklahoma | all 
+rights reserved<br />
+</address>
+
+<img src="images/ou.png" alt="OU" />
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+

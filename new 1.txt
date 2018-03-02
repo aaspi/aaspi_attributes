@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AASPI | about</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- The <link> tag is used to reference the CSS style sheet which
+		 describes how the page is styled and designed -->
+<link rel="stylesheet" href="style.css" type="text/css" />
+<!-- Drop down menus from suckerfish at htmldog.com -->
+<script type="text/javascript">
+    sfHover = function() {
+        var sfEls = document.getElementById("navlist").getElementsByTagName("li");
+        for (var i=0; i<sfEls.length; i++) {
+            sfEls[i].onmouseover=function() {
+            this.className+=" sfhover";
+            }
+            sfEls[i].onmouseout=function() {
+                this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+            }
+        }
+    }
+    if (window.attachEvent) window.attachEvent("onload", sfHover);
+</script>
+</head>
+
+<body>
+<div id="frame">
+<div id="header">
+    <div>
+        <table border="0" width="100%" cellspacing="0" cellpadding="5" summary="header">
+            <tr>
+                <td rowspan="2"><img src="images/aaspi.png" alt="AASPI" /></td>
+                <td class="header_text"><h1>AASPI @ ConocoPhillips School of Geology &amp; Geophysics</h1></td>
+                <td rowspan="2"><img src="images/cpsgg.png" alt="CPSGG" /></td>
+            </tr>
+            <tr>
+                <td class="header_text"><h3>Attribute Assisted Seismic Processing &amp; Interpretation | The University of Oklahoma</h3></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="container">
+    <div class="nav" id="sitenav">
+        <ul id="navlist">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about AASPI</a></li>
+            <li><a href="members.html">members</a>
+                <ul>
+                    <li><a href="faculty.html">principal investigators</a></li>
+                    <li><a href="students.html">students</a></li>
+					<li><a href="it_support.html">it support</a></li>
+                    <li><a href="sponsors.html">sponsors</a></li>
+					<li><a href="faculty/tim.html">In Memoriam</a></li>
+                </ul>
+            </li>
+            <li><a href="documentation.html">software documentation</a></li>
+			<li><a href="releasenotes.html">software release notes</a></li>
+            <li><a href="research.html">research</a></li>
+			 <li><a href="Theses.html">theses and dissertations</a></li>
+			 <li><a href="submitted.html">submitted papers</a></li>
+            <li><a href="publications.html">publications</a></li>
+           	<li><a href="resources.html">resources</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="upload">downloads</a></li>
+        </ul>
+    </div>
+
+<div class="cont" id="content">
+
+<h2> AASPI Software Release Notes</h2>
+
+<h4 class="section_header">AASPI Release - February, 2016 </h4>
+
+<ul>
+ 
+<li><b><a href="aaspi_release/new_features/Enhanced_2016.pdf">Enhanced Applications</a></li>
+
+ <h4 class="section_header">AASPI Release - September, 2015 </h4>
+
+<ul>
+ 
+<li><b><a href="aaspi_release/new_features/new_app_sept_2015/New15.pdf"><b>New Applications</b></a></li>
+<li><b><a href="aaspi_release/new_features/new_app_sept_2015/enhanced15.pdf"><b>Enhanced Applications</b></a></li>
+
+<h4 class="section_header">AASPI Release - February, 2015 </h4>
+
+
+<li><b><a href="aaspi_release/new_features/new_utilities_feb_2015_files/new_feb_2015.pdf"><b>New Applications</b></a></li>
+	
+<p class="section_content"></p>
+
+
+
+
+<h4 class="section_header">AASPI Release - November, 2014 </h4>
+
+<li><b><a href="aaspi_release/new_features/new_utilities_feb_2015_files/new_feb_2015.pdf"><b>New Applications</b></a></li>
+
+</ul>
+
+<p class="section_content"></p>
+
+</ul>
+
+
+</ul>
+</div>
+</div>
+
+
+
+<div class="nav" id="extlinks">
+<p><a href="http://www.ou.edu/mcee/geology.html">ConocoPhillips School of Geology
+ &amp; Geophysics</a> | <a href="http://www.ou.edu/mcee.html">Mewbourne College 
+ of Earth &amp; Energy</a> | <a href="http://www.ou.edu/web.html">The University
+  of Oklahoma</a></p>
+</div>
+
+<div id="footer">
+<address>
+Suite 872, Sarkeys Energy Center, 100 E. Boyd St., Norman, OK 73019<br />
+date of last revision: 04 April, 2016<br />
+&#169; copyright 2013 the board of regents of the university of oklahoma | all 
+rights reserved<br />
+</address>
+
+<img src="images/ou.png" alt="OU" />
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-- this is a template for creating new webpages -->
+<!-- this template was created by Ben Dowdell -->
+
+<html>
+
+<head>
+
+<title>AASPI | Attribute Resource Table</title>
+
+<!-- The meta tag describes the way the page's characters are encoded -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- The <link> tag is used to reference the CSS style sheet
+    which describes how the page is styled and designed.
+    This file contains settings for colors, fonts, etc. -->
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<!-- Drop down menus from suckerfish at htmldog.com -->
+<script type="text/javascript">
+	sfHover = function() {
+		var sfEls = document.getElementById("navlist").getElementsByTagName("li");
+		for (var i=0; i<sfEls.length; i++) {
+			sfEls[i].onmouseover=function() {
+				this.className+=" sfhover";
+			}
+		 	sfEls[i].onmouseout=function() {
+				this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+			}
+		}
+	}
+	if (window.attachEvent) window.attachEvent("onload", sfHover);
+</script>
+<!-- This javascript enables drop down menus when the mouse hovers over
+    the selection.  This is used currently when the mouse hovers over the 
+    "members" menu item -->
+</head>
+
+<body>
+<div id="frame">
+<div id="header">
+<div>
+<!-- the table below serves as the top banner -->
+<table border="0" width="100%" cellspacing="0" cellpadding="5" summary="header">
+	<tr>
+		<td rowspan="2"><img src="images/aaspi.png" alt="AASPI" /></td>
+		<td class="header_text"><h1>AASPI @ ConocoPhillips School of Geology &amp; Geophysics</h1></td>
+		<td rowspan="2"><img src="images/cpsgg.png" alt="CPSGG" /></td>
+	</tr>
+	<tr>
+		<td class="header_text"><h3>Attribute Assisted Seismic Processing &amp; Interpretation | The University of Oklahoma</h3></td>
+	</tr>
+</table>
+</div>
+</div>
+
+<!-- This list serves as the site navigation on the left pane -->
+<!-- If a new page is to be added to the site navigation menu, do so here using <li></li> tags -->
+<div id="container">
+<div class="nav" id="sitenav">
+<ul id="navlist">
+	<li><a href="index.html">home</a></li>
+	<li><a href="about.html">about</a></li>
+	<li><a href="members.html">members</a>
+		<ul>
+			<li><a href="faculty.html">principal investigators</a></li>
+			<li><a href="students.html">students</a></li>
+			<li><a href="sponsors.html">sponsors</a></li>
+		</ul>
+	</li>
+	<li><a href="documentation.html">documentation</a></li>
+	<li><a href="research.html">research</a></li>
+	<li><a href="publications.html">publications</a></li>
+	<li><a href="resources.html">resources</a></li>
+	<li><a href="contact.html">contact</a></li>
+	<li><a href="upload">downloads</a></li>
+    <li><a href="template.html">Attribute Resource Table</a></li> <!-- This is where you would put a new navigation link -->
+</ul>
+</div>
+
+<!-- This div container holds the main page content, and this is where your changes should go -->
+<div class="cont" id="content">
+
+<h2>Attribute Resource Table</h2>
+
+
+ <thead>
+  <tr>
+   <th colspan="1">Geologic Facies</th>
+   <th colspan="2">Visual Expression
+   <th colspan="3">Attribute Expression
+  </tr>
+  <tr>
+
+ <tbody>
+  <tr>
+   <th>Reflection Configuration</th>
+   <th>External Forms</th>
+   <th>Amplitude</th>
+   <th>Coherence</th>
+   <th>Dip</th>
+   <th>Curvature</th>
+   <th>Spectra</th>
+   <th>Texture</th>
+  </tr>
+  <tr>
+   <td>Parallel to subparallel</td>
+   <td>Sheet Drape</td>
+   <td>Low to Moderate</td>
+   <td>Moderate to High</td>
+   <td>Parallel to subparallel, convergent at the onlap surfaces</td>
+   <td>low</td>
+   <td>Moderate to high spectral response</td>
+   <td>Low entropy</td>
+  </tr>
+   <tr>
+   <td>Progradational</td>
+   <td>Wedgedge</td>
+   <td>Moderate to High</td>
+   <td>Moderate to High: Low at terminations</td>
+   <td>Subparallel, convergent at the downlap and toplap surfaces</td>
+   <td>positive and negative curvature anomalies</td>
+   <td>High spectral response</td>
+   <td>Low entropy</td>
+  </tr>
+ </tr>
+   <tr>
+   <td>Progradational, subparallel, chaotic</td>
+   <td>Incisement of  regional pattern</td>
+   <td>Variable</td>
+   <td>External and internal low coherence edges</td>
+   <td>Parallel to subparallel, convergent at edges of incisement in channel base imaged</td>
+   <td>Anomalies associated with compaction; composite anomalies associated with stacked channels</td>
+   <td>Variable spectral response to variable fill thickness</td>
+   <td>Variable</td>
+  </tr>
+   
+   <tr>
+   <td>Locally subparallel bedding</td>
+   <td>Piecewise rotated blocks</td>
+   <td>Variable</td>
+   <td>Piecewise coherent</td>
+   <td>Piecewise parallel, convergent across blocks</td>
+   <td>Anomalies associated with lateral changes in block orientation</td>
+   <td>Variable; difference in each block</td>
+   <td>High entropy interspersed with high homogeneity</td>
+  </tr>
+   
+   <tr>
+   <td>Low reflectivity, almost transparent</td>
+   <td>Locally thick package with unconformable base and relatively smooth top</td>
+   <td>Anomalously low</td>
+   <td>Relatively incoherent because of lower signal-to-noise ratio</td>
+   <td>Parallel, near flat if discernable</td>
+   <td>No meaningful anomalies</td>
+   <td>Low frequency response</td>
+   <td>High entropy  due to lack of reflectivity</td>
+  </tr>
+  
+  
+   <tr>
+   <td>Tongue-like patterns</td>
+   <td>Emanating from the volcanic cone</td>
+   <td>High amplitude</td>
+   <td>Possible anomalies associated with vents and fissures</td>
+   <td>Subparallel to flanks of volcanic cone</td>
+   <td>Possible anomalies associated with vents and fissures</td>
+   <td>Broadband response</td>
+   <td>Low entropy</td>
+  </tr>
+
+  
+   <tr>
+   <td>Localized by large in size; incoherent</td>
+   <td>Cone-shaped with onlapping reflectors; deeper conduit poorly imaged due to velocity pull up and steep dips</td>
+   <td>High to moderate amplitude</td>
+   <td>Internally low coherence</td>
+   <td>Chaotic</td>
+   <td>Chaotic, generally meaningless anomalies</td>
+   <td>Low frequency response</td>
+   <td>High entropy</td>
+  </tr>
+  
+   <tr>
+   <td>Bright spots</td>
+   <td>High amplitude anomalies, possibly with different phase; relatively flat</td>
+   <td>High amplitude; Negative reflectivity in shallow section; Possible lateral change in phase from non-charged facies</td>
+   <td>Coherent</td>
+   <td>Flat dip</td>
+   <td>No meaningful anomalies</td>
+   <td>Broadband to low frequency response</td>
+   <td>Low entropy</td>
+  </tr>
+ </tbody>
+ <tfoot>
+
+
+<p>This is a sample paragraph using the paragraph tags.  This will create a block of text until you close the tag.
+Unless you specifically format it, the text will continue uninterrupted until you close the tag, only breaking for
+ endlines.  This paragraph uses the page default of centered text justification.  If you want to actually break lines,
+ <br /> you must do so <strong>explicitly using the break tag.</strong>  Use the style.css sheet to adjust the way the
+  page is formatted</p>
+
+<p class="section_content">Notice that the default is for the text to use a centered justification.  Here I am 
+using the section_content class from the homepage which specifies that text should be left justified.</p>
+
+<!-- the hr tag creates a horizontal rule (line) across the page -->
+
+<!---hr /-->
+
+<!-- An example of different headings -->
+
+
+
+<!-- Lets examine ordered and unordered lists -->
+
+<p class="section_content">Let's take a look at ordered and unordered lists!</p>
+
+<!-- Ordered first -->
+
+<ol>
+    <li>This is item number one</li>
+    <li>This is item number two</li>
+    <li>And so on and so forth</li>
+    <li>We create ordered lists using the ol tag</li>
+</ol>
+
+<!-- Unordered next -->
+
+<ul>
+    <li>This is the first item</li>
+    <li>This is item number two</li>
+    <li>And so on and so forth</li>
+    <li>We create unordered lists using the ul tag</li>
+    <li>Unordred lists are good when you don't want numbers</li>
+    <li><ul>
+            <li>You can even have a list within a list!</li>
+            <li>You simply make a list element a list</li>
+        </ul></li>
+</ul>
+
+<p class="section_content">I use unordered lists to create the site navigation menu on the left hand side.</p>
+
+<p class="section_content">I use the style.css sheet to remove the bulletpoints for my unordered list I used for the site navigation menu.</p>
+
+<p class="section_content">This is an example of how to make hyperlinks.  This one links to <a href="http://www.google.com">Google</a></p>
+
+<!-- Putting the image below in this div using class="image" will eliminate the active background hover the image is moused over -->
+<div class="image">
+    <p>And this one links to <a href="http://www.ou.edu" target="_blank"><img src="images/ou.png" alt="OU" /></a> and opens in a new tab</p>
+</div>
+
+</div>
+</div>
+
+<!-- these are external links at the bottom of the page -->
+<div class="nav" id="extlinks">
+<p><a href="http://www.ou.edu/mcee/geology.html">ConocoPhillips School of Geology &amp; Geophysics</a> | <a href="http://www.ou.edu/mcee.html">Mewbourne College  of Earth &amp; Energy</a> | <a href="http://www.ou.edu/web.html">The University  of Oklahoma</a></p>
+</div>
+
+<!-- this is contact and copyright info for AASPI, CPSGG, MCEE, and OU -->
+<div id="footer">
+<address>Suite 872, Sarkeys Energy Center, 100 E. Boyd St., Norman, OK 73019<br />
+Date of last revision: 06 June, 2015<br />
+&#169; Copyright 2015 The Board of Regents of the University of Oklahoma | All 
+Rights Reserved<br /></address>
+<img src="images/ou.png" alt="OU" />
+</div>
+</div>
+</body>
+</html>

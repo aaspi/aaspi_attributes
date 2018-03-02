@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>AASPI | Marfurt</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- The <link> tag is used to reference the CSS style sheet which
+		 describes how the page is styled and designed -->
+
+<link rel="stylesheet" href="../style.css" type="text/css" />
+
+<!-- Drop down menus from suckerfish at htmldog.com -->
+
+<script type="text/javascript">
+    sfHover = function() {
+        var sfEls = document.getElementById("navlist").getElementsByTagName("li");
+        for (var i=0; i<sfEls.length; i++) {
+            sfEls[i].onmouseover=function() {
+                this.className+=" sfhover";
+            }
+            sfEls[i].onmouseout=function() {
+                this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+            }
+        }
+    }
+    if (window.attachEvent) window.attachEvent("onload", sfHover);
+</script>
+
+</head>
+
+<body>
+
+<div id="frame">
+
+<div id="header">
+    <div>
+        <table border="0" width="100%" cellspacing="0" cellpadding="5" summary="header">
+            <tr>
+                <td rowspan="2"><img src="../images/aaspi.png" alt="AASPI" /></td>
+                <td class="header_text"><h1>AASPI @ ConocoPhillips School of Geology &amp; Geophysics</h1></td>
+                <td rowspan="2"><img src="../images/cpsgg.png" alt="CPSGG" /></td>
+            </tr>
+            <tr>
+                <td class="header_text"><h3>Attribute Assisted Seismic Processing &amp; Interpretation | The University of Oklahoma</h3></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="container">
+    <div class="nav" id="sitenav">
+        <ul id="navlist">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About AASPI</a></li>
+            <li><a href="../members.html">Members</a>
+                <ul>
+                <li><a href="../faculty.html">Principal investigators</a></li>
+                <li><a href="../students.html">Students</a></li>
+                <li><a href="../it_support.html">IT support</a></li>
+                <li><a href="../sponsors.html">Industry Sponsors</a></li>
+                <li><a href="../faculty/tim.html">In Memoriam</a></li>
+                </ul>
+            </li>
+            <li><a href="../documentation.html">Software documentation</a></li>
+            <li><a href="../releasenotes.html">Software updates and enhancements</a></li>
+            <li><a href="../workplan.html">Research Workplan</a></li>
+            <li><a href="../Theses.html">Theses and dissertations</a></li>
+            <li><a href="../submitted.html">Submitted papers 2017</a></li>
+            <li><a href="../publications.html">Published papers 2009-2017</a></li>
+            <li><a href="../resources.html">Resources</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../upload">Downloads</a></li>
+        </ul>
+    </div>
+
+<div class="cont" id="content">
+<h2>Dr. Kurt J. Marfurt</h2>
+<h4>Principal Investigator, AASPI</h4>
+<img src="../images/people/Kurt_fall_2017.jpg" alt="marfurt" />
+
+<p style="line-height: 150%">
+Ph.D. Applied Geophysics, Columbia University, New York, NY 1978<br />
+M.S. Applied Geophysics, Columbia University, New York, NY 1975<br />
+A.B. French and Physics, Hamilton College, Clinton, NY 1973</p>
+
+<p style="line-height: 150%">
+ConocoPhillips School of Geology and Geophysics<br />
+Mewbourne College of Earth and Energy<br />
+The University of Oklahoma</p>
+
+<p style="line-height: 150%">
+office: sec 872<br />
+phone: (405) 325.5659<br />
+fax: (405) 325.3140<br />
+email: <a href="mailto:kmarfurt@ou.edu">kmarfurt@ou.edu</a></p>
+
+<h4 class="section_header">Research Interests</h4>
+
+<p class="section_content">
+3D Seismic Attributes, Quantitative Interpretation, Seismic Geomorphology, and Machine Learning
+</p>
+
+<h4 class="section_header">Biographical Information</h4>
+
+<p class="section_content">
+Kurt J. Marfurt joined The University of Oklahoma in 2007 where he serves as the Frank and Henrietta Schultz Professor of Geophysics within the ConocoPhillips School of Geology and Geophysics. Marfurt’s primary research interest is in the development and calibration of new seismic attributes to aid in seismic processing, seismic interpretation, and reservoir characterization. Recent work has focused on applying coherence, spectral decomposition, structure-oriented filtering, and volumetric curvature to mapping fractures and karst with a particular focus on resource plays. Marfurt earned a Ph.D. in applied geophysics at Columbia University’s Henry Krumb School of Mines in New York in 1978 where he also taught as an Assistant Professor for four years. He worked 18 years in a wide range of research projects at Amoco’s Tulsa Research Center after which he joined the University of Houston for eight years as a Professor of Geophysics and the Director of the Allied Geophysics Lab. He has received the SEG best paper (for coherence), SEG best presentation (for seismic modeling), as a coauthor with Satinder Chopra best SEG poster (one on curvature, one on principal component analysis) and best AAPG technical presentation, and as a coauthor with Roderick Perez Altimar, SEG/AAPG Interpretation best paper (on brittleness) awards. Marfurt also served as the EAGE/SEG Distinguished Short Course Instructor for 2006 (on seismic attributes). He will go on tour again in 2018 for the SEG, presenting a one-day course on “Seismic attributes as the framework for data integration throughout the oil field lifespan”. In addition to teaching and research duties at OU, leading short courses on attributes for the SEG and AAPG, Marfurt currently serves as Editor in Chief of the AAPG/SEG Journal Interpretation.
+
+</p>
+
+
+<p>Back to <a href="../faculty.html">Principal Investigators</a></p>
+
+</div>
+
+</div>
+
+<div class="nav" id="extlinks">
+
+<p><a href="http://www.ou.edu/mcee/geology.html">ConocoPhillips School of Geology
+ &amp; Geophysics</a> | <a href="http://www.ou.edu/mcee.html">Mewbourne College 
+ of Earth &amp; Energy</a> | <a href="http://www.ou.edu/web.html">The University
+  of Oklahoma</a></p>
+
+</div>
+
+<div id="footer">
+
+<address>
+suite 872, sarkeys energy center, 100 e. boyd st., norman, ok 73019<br />
+date of last revision: 25 October, 2017<br />
+&#169; copyright 2017 the board of regents of the university of oklahoma | all 
+rights reserved<br />
+</address>
+
+<img src="../images/ou.png" alt="OU" />
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+
